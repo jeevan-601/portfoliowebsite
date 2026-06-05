@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About a student freelancer pursuing B.Tech IT and IIT Madras Data Science & Applications." />
+  <meta name="description"
+    content="About a student freelancer pursuing B.Tech IT and IIT Madras Data Science & Applications." />
   <title>About | Student Freelancer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
@@ -25,8 +28,6 @@
       <ul class="nav-links">
         <li><a href="index.html" class="">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
-        <li><a href="skills.html" class="">Skills</a></li>
-        <li><a href="education.html" class="">Education</a></li>
         <li><a href="services.html" class="">Services</a></li>
         <li><a href="contact.html" class="">Contact</a></li>
       </ul>
@@ -34,21 +35,91 @@
   </header>
 
   <main class="page-main">
-    <section class="content-section split-section page-section">
+    <section class="hero section-shell compact-hero" id="about">
       <div>
         <p class="eyebrow">About Me</p>
         <h1>Creating reliable web solutions with modern technologies.</h1>
       </div>
       <div class="section-text feature-panel">
         <p>
-          I balance two demanding academic tracks while building freelance-ready technical skills. My strength is backend logic with Python and Django, and I enjoy connecting clean interfaces with reliable MySQL databases.
+          I develop modern, responsive websites that are fast, reliable, and easy to use. Using Python, Django, MySQL, HTML, CSS, and Bootstrap, I help students, businesses, and startups turn ideas into functional web solutions.
         </p>
         <p>
-          My goal is to build practical, clear, and maintainable websites for students, small businesses, and clients who need reliable web solutions without unnecessary complexity.
+          My focus is building practical, maintainable websites that deliver a clean user experience while remaining simple to manage and scale.
         </p>
         <a class="btn primary" href="contact.html">Start a Project</a>
       </div>
     </section>
+
+
+    <section class="content-section page-preview split-section reverse page-section"
+      style="border-top: 1px solid var(--line);" id="education">
+      <div class="timeline">
+        <article>
+          <span>2025 - present</span>
+          <h3>B.Tech in Information Technology</h3>
+          <p>Puducherry Technological University</p>
+        </article>
+        <article>
+          <span>2025 - present</span>
+          <h3>Data Science & Applications</h3>
+          <p>Indian Institute of Technology Madras</p>
+        </article>
+      </div>
+      <div class = "education-text">
+        <p class="eyebrow">Education</p>
+        <h1>Learning engineering and data science side by side.</h1>
+        <p class="section-text">
+          Studying Information Technology and Data Science together helps me approach projects with software engineering
+          fundamentals, database thinking, and data-driven problem solving.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="content-section page-preview" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h1>Tools and technologies behind my projects.</h1>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <span>01</span>
+          <h3>Python</h3>
+          <p>Writing readable scripts, backend logic, and automation-friendly code.</p>
+        </article>
+        <article class="skill-card">
+          <span>02</span>
+          <h3>Django</h3>
+          <p>Building structured web applications with views, models, templates, and admin workflows.</p>
+        </article>
+        <article class="skill-card">
+          <span>03</span>
+          <h3>HTML & CSS</h3>
+          <p>Creating responsive page layouts with clean markup and modern visual styling.</p>
+        </article>
+        <article class="skill-card">
+          <span>04</span>
+          <h3>MySQL</h3>
+          <p>Designing backend data storage for practical CRUD-based web applications.</p>
+        </article>
+        <article class="skill-card">
+          <span>05</span>
+          <h3>Bootstrap</h3>
+          <p>Building responsive and mobile-first interfaces using Bootstrap components and utilities.</p>
+        </article>
+        <article class="skill-card">
+          <span>06</span>
+          <h3>Git & GitHub</h3>
+          <p>Version control, collaboration, and project management using Git workflows.</p>
+          <a class="btn primary" href="https://github.com/jeevan-601" target="_blank" rel="noopener">
+            View GitHub
+          </a>
+        </article>
+      </div>
+    </section>
+
+
   </main>
 
   <footer class="site-footer">
@@ -57,4 +128,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
