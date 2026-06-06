@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap');
 
-/* ─── Tokens ─────────────────────────────────────────────────── */
 :root {
   --bg:          #080c10;
   --surface:     #0d1520;
@@ -929,26 +928,60 @@ p { color: var(--subtle); }
 .delay-3 { animation-delay: 0.35s; }
 .delay-4 { animation-delay: 0.5s; }
 
-/* ─── Responsive ─────────────────────────────────────────────── */
+/* ─── RESPONSIVE OVERHAUL ─────────────────────────────────────
+   Drop this at the END of your existing CSS file,
+   replacing the existing @media blocks entirely.
+   ──────────────────────────────────────────────────────────── */
+
+/* ── Tablet: 900px and below ─────────────────────────────────── */
 @media (max-width: 900px) {
-  .hero,
-  .split,
+  /* Section spacing */
+  .section { padding-block: 72px; }
+
+  /* Hero: stack vertically, card below text */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-block: 56px;
+    min-height: unset;
+  }
+  .hero-card {
+    max-width: 480px;        /* cap width when centred */
+    width: 100%;
+  }
+
+  /* About split */
+  .split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .split.flip { direction: ltr; } /* undo RTL flip on mobile */
+
+  /* Contact grid */
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  .contact-card { position: static; }
 
-  .hero { padding-block: 56px; }
-  .hero-card { max-width: 400px; }
+  /* Stats: 3 across on tablet */
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
   .stat-box.full { grid-column: auto; }
 
+  /* Services / explore grids: 2-col */
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-card { position: static; }
+
+  /* Footer: 2-col */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-brand { grid-column: 1 / -1; }
 }
 
+/* ── Large phone: 640px and below ────────────────────────────── */
 @media (max-width: 640px) {
+  /* Hamburger menu */
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -958,21 +991,78 @@ p { color: var(--subtle); }
     background: rgba(8,12,16,0.97);
     border-bottom: 1px solid var(--border);
     flex-direction: column;
-    padding: 16px 24px;
+    padding: 16px 20px;
     gap: 4px;
+    z-index: 99;
   }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 16px; border-radius: 8px; }
+  .nav-socials { display: none; }
 
-  .section { padding-block: 64px; }
-  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  /* Section spacing */
+  .section { padding-block: 56px; }
 
-  .hero h1 { font-size: 2.6rem; }
+  /* Typography: safe minimums */
+  h1 { font-size: clamp(2.2rem, 8vw, 5.5rem); }
+  h2 { font-size: clamp(1.6rem, 6vw, 3.4rem); }
+
+  /* Hero */
+  .hero { gap: 32px; padding-block: 40px; }
+  .hero-card { max-width: 100%; }
+  .hero-sub { font-size: 0.975rem; }
+  .hero-actions { flex-direction: column; gap: 10px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* Stats: 2-col */
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-box.full { grid-column: 1 / -1; }
 
-  .hero-actions .btn { flex: 1; justify-content: center; }
+  /* All multi-column grids → single column */
+  .grid-3,
+  .grid-2 { grid-template-columns: 1fr; }
+
+  /* Page hero */
+  .page-hero { padding-block: 48px 40px; }
+
+  /* Section header */
+  .section-header { margin-bottom: 32px; }
+
+  /* Contact */
+  .contact-info p { font-size: 0.95rem; }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
+/* ── Small phone: 400px and below ────────────────────────────── */
 @media (max-width: 400px) {
-  .wrap { width: calc(100% - 32px); }
+  /* More breathing room on tiny screens */
+  .wrap { width: calc(100% - 28px); }
+
+  h1 { font-size: clamp(1.9rem, 9vw, 2.8rem); }
+
+  /* Tighter card padding */
+  .card,
+  .skill-card,
+  .service-card,
+  .project-card { padding: 20px; }
+  .hero-card { padding: 24px; }
+  .contact-card { padding: 24px; }
+
+  /* Stats stay 2-col but smaller */
+  .stat-box .val { font-size: 1.25rem; }
+
+  /* Buttons full-width by default */
+  .btn { padding: 12px 18px; font-size: 0.82rem; }
+
+  /* Footer bottom */
+  .footer-bottom { gap: 8px; }
 }
