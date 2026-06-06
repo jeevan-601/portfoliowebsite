@@ -1,111 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Freelance web development services including Django backends and responsive portfolio websites." />
-  <title>Services | Student Freelancer Portfolio</title>
+  <meta name="description" content="Freelance web development services — Django backends, responsive websites, automation with n8n." />
+  <title>Services — Jeevanraj</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+
   <header class="site-header">
-    <nav class="navbar" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Portfolio home">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
         <span class="brand-mark">.JR</span>
-        <span>JEEVANRAJ</span>
+        <span>Jeevanraj</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="">Home</a></li>
-        <li><a href="about.html" class="">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html" class="">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-socials">
+        <a class="nav-social-link" href="https://github.com/jeevan-601" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a class="nav-social-link" href="https://www.linkedin.com/in/jeevan-raj-b690b136b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
     </nav>
   </header>
 
-  <main class="page-main">
-    <section class="content-section page-section">
-      <div class="section-heading">
-        <p class="eyebrow">Freelance Services</p>
-        <h1>What I can help you build.</h1>
-      </div>
-      <div class="service-grid">
-        <article>
-          <h3>Workflow Automation with n8n</h3>
-          <p>
-            Automate repetitive tasks, form submissions, email alerts,
-            and business workflows to save time and reduce manual work.
-          </p>
-        </article>
-        <article>
-          <h3>Responsive Portfolio Websites</h3>
-          <p>Personal portfolios, student profiles, and landing pages that work on mobile and desktop.</p>
-        </article>
-        <article>
-          <h3>Student & Small Business Projects</h3>
-          <p>Clean, practical web solutions for assignments, prototypes, and local business needs.</p>
-        </article>
-      </div>
-      <div class="page-cta">
-        <a class="btn primary" href="contact.html">Discuss a Project</a>
+  <main>
+    <!-- ─── Page Hero ─── -->
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow fade-up">Services</p>
+        <h1 class="fade-up delay-1">What I can build for you.</h1>
+        <p class="fade-up delay-2">Practical, affordable web solutions — built clean and delivered on time.</p>
       </div>
     </section>
 
-    <section class="content-section">
-      <div class="section-heading">
-        <p class="eyebrow">Featured Projects</p>
-        <h2>Live Demo Projects</h2>
-        <p class="section-text">
-          Some of the websites I've designed and deployed.
-        </p>
+    <!-- ─── Services ─── -->
+    <section class="section">
+      <div class="wrap">
+        <div class="grid-3">
+          <div class="service-card">
+            <span class="service-icon">⚡</span>
+            <h3>Workflow Automation</h3>
+            <p>Automate repetitive tasks, form submissions, email alerts, and business workflows using n8n to save time and reduce manual errors.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-icon">🖥️</span>
+            <h3>Responsive Websites</h3>
+            <p>Personal portfolios, student profiles, and business landing pages that look great on every screen — mobile or desktop.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-icon">🛠️</span>
+            <h3>Student &amp; Small Business Projects</h3>
+            <p>Clean, practical web solutions for assignments, prototypes, and local business needs — built to be manageable, not over-engineered.</p>
+          </div>
+        </div>
+        <div class="mt-40" style="text-align:center;">
+          <a class="btn btn-primary" href="contact.html">Discuss a Project</a>
+        </div>
       </div>
+    </section>
 
-      <div class="project-grid">
+    <!-- ─── Projects ─── -->
+    <section class="section" style="border-top:1px solid var(--border);">
+      <div class="wrap">
+        <div class="section-header">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Live work, real results.</h2>
+          <p>A selection of websites I've designed and deployed for real use.</p>
+        </div>
+        <div class="grid-2">
+          <div class="project-card">
+            <div>
+              <span class="project-tag">Education · Live</span>
+              <h3 class="mt-16">Bright Future Academy</h3>
+              <p>A modern tuition center website with course information, responsive design, and WhatsApp contact integration — built to convert visitors into enquiries.</p>
+            </div>
+            <a class="btn btn-primary" href="https://brightfutureacademy.dev" target="_blank" rel="noopener">View Live Demo →</a>
+          </div>
+          <div class="project-card">
+            <div>
+              <span class="project-tag">Restaurant · Live</span>
+              <h3 class="mt-16">La Belle Époque</h3>
+              <p>An elegant restaurant landing page with menu highlights, reservation CTAs, and a modern UI — designed to impress from the first scroll.</p>
+            </div>
+            <a class="btn btn-primary" href="https://jeevan-601.github.io/restaurantlandingpage/" target="_blank" rel="noopener">View Live Demo →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <article class="project-card">
-          <h3>Bright Future Academy</h3>
-          <p>
-            A modern tuition center website featuring course information,
-            responsive design, and WhatsApp contact integration.
-          </p>
-
-          <a href="https://brightfutureacademy.dev" target="_blank" class="btn primary">
-            View Live Demo
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3>La Belle Époque</h3>
-          <p>
-            Elegant restaurant landing page showcasing menu highlights,
-            reservation call-to-actions, and modern UI design.
-          </p>
-
-          <a href="https://jeevan-601.github.io/restaurantlandingpage/" target="_blank" class="btn primary">
-            View Live Demo
-          </a>
-        </article>
-
+    <!-- ─── CTA strip ─── -->
+    <section class="section" style="border-top:1px solid var(--border);">
+      <div class="wrap" style="text-align:center; max-width:600px; margin-inline:auto;">
+        <p class="eyebrow" style="justify-content:center;">Ready to build?</p>
+        <h2>Tell me about your project.</h2>
+        <p class="mt-16">Drop a message on WhatsApp — share your idea, timeline, and key features. I'll get back within 24 hours.</p>
+        <a class="btn btn-primary mt-32" href="contact.html">Get in Touch</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Student Freelancer. Built with HTML, CSS, and JavaScript.</p>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">.JR</span>
+            <span>Jeevanraj</span>
+          </a>
+          <p>B.Tech IT student &amp; IIT Madras Data Science learner building affordable, modern web solutions for businesses and startups.</p>
+          <div class="footer-social">
+            <a class="social-link" href="https://github.com/jeevan-601" target="_blank" rel="noopener" aria-label="GitHub"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23A11.52 11.52 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+            <a class="social-link" href="https://www.linkedin.com/in/jeevan-raj-b690b136b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="social-link" href="https://wa.me/919344108864" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L.057 23.18a.75.75 0 00.916.916l5.328-1.475C7.878 23.442 9.873 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.946 0-3.762-.537-5.31-1.467l-.38-.226-3.944 1.093 1.093-3.944-.226-.38A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+            <a class="social-link" href="mailto:jeevanraj05022008@gmail.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">Responsive Websites</a></li>
+            <li><a href="services.html">Django Backends</a></li>
+            <li><a href="services.html">Workflow Automation</a></li>
+            <li><a href="services.html">Student Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/jeevan-601" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jeevan-raj-b690b136b/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://wa.me/919344108864" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:jeevanraj05022008@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jeevanraj R — Freelance Web Developer, Puducherry</p>
+        <div class="footer-status">
+          <span class="dot"></span>
+          Open for new projects
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
