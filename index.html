@@ -2347,7 +2347,21 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
+    emailjs.init("service_plveq9m");
+    emailjs.send(
+    "service_plveq9m",
+    "template_3iti0rj",
+    {
+    name: document.getElementById("f-name").value,
+    email: document.getElementById("f-email").value,
+    company: document.getElementById("f-company").value,
+    project_type: document.getElementById("f-type").value,
+    budget: document.getElementById("f-budget").value,
+    message: document.getElementById("f-message").value
+    }
+    );
     const marqueeItems = [
       { name: 'Telegram', icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 2.5l-19 7.4c-.9.4-.9 1.7.1 2l4.7 1.5 1.8 5.8c.2.7 1.1.9 1.6.4l2.6-2.4 4.6 3.4c.7.5 1.7.2 1.9-.7l3.4-16c.2-1-.8-1.7-1.7-1.4zM8.6 13.6l8.8-6.2c.3-.2.6.2.3.4l-7.3 7.1c-.3.3-.5.7-.5 1.1l-.3 2.8-1-5.2z"/></svg>' },
       { name: 'Discord', icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 5.4A18 18 0 0015.6 4l-.3.5a14 14 0 014.2 1.6 14.8 14.8 0 00-15 0A14 14 0 014.7 4.5L4.4 4a18 18 0 00-4.7 1.4C-2 9.6-1 14 .3 18.2a17.8 17.8 0 005.3 2.7l.7-1a13 13 0 01-2-1l.5-.4a13 13 0 0011.4 0l.5.4a13 13 0 01-2 1l.7 1a17.8 17.8 0 005.3-2.7c1.5-4.6 1-8.9-1.9-12.8zM8.4 14.8c-1 0-1.7-.9-1.7-2s.8-2 1.7-2 1.7.9 1.7 2-.7 2-1.7 2zm6.8 0c-1 0-1.7-.9-1.7-2s.7-2 1.7-2 1.7.9 1.7 2-.7 2-1.7 2z"/></svg>' },
