@@ -45,6 +45,12 @@
 
     html {
       scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -2006,21 +2012,6 @@
             </svg>
           </a>
         </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num"><span class="count-up" data-target="10">0</span><span class="plus">+</span>
-            </div>
-            <div class="hero-stat-label">Projects Delivered</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="count-up" data-target="30">0</span><span class="plus">+</span></div>
-            <div class="hero-stat-label">Automations in Production</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="count-up" data-target="3">0</span><span class="plus">+</span></div>
-            <div class="hero-stat-label">Years Building</div>
-          </div>
-        </div>
       </div>
 
       <div class="terminal-wrap">
@@ -2046,70 +2037,6 @@
       <div class="trust-label">Built with the tools that run modern businesses</div>
     </div>
     <div class="marquee-track" id="marqueeTrack"></div>
-  </section>
-
-  <!-- FEATURED BUILD -->
-  <section class="featured" id="featured">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="eyebrow">featured build</div>
-        <h2 class="section-title">One system. Storefront to checkout to fulfillment.</h2>
-        <p class="section-sub">A flagship build combining a conversion-tuned storefront with a fully automated backend —
-          orders, payments, and customer messages all running themselves.</p>
-      </div>
-
-      <div class="featured-panel reveal" id="featuredPanel">
-        <div class="featured-browser-bar">
-          <span class="terminal-dot" style="background:#FF5F57;"></span>
-          <span class="terminal-dot" style="background:#FEBC2E;"></span>
-          <span class="terminal-dot" style="background:#28C840;"></span>
-          <div class="url">orbitsupply.co — production</div>
-        </div>
-        <div class="featured-visual">
-          <div class="featured-mockup-grid"></div>
-          <div class="featured-mockup">
-            <div class="featured-fake-bars">
-              <div class="bar" style="height:90px;">
-                <div class="fill" style="height:55%;"></div>
-              </div>
-              <div class="bar" style="height:90px;">
-                <div class="fill" style="height:78%;"></div>
-              </div>
-              <div class="bar" style="height:90px;">
-                <div class="fill" style="height:40%;"></div>
-              </div>
-              <div class="bar" style="height:90px;">
-                <div class="fill" style="height:92%;"></div>
-              </div>
-              <div class="bar" style="height:90px;">
-                <div class="fill" style="height:65%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="featured-cta-overlay">
-            <div class="featured-demo-btn">
-              View Live Demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M7 17L17 7M17 7H7M17 7V17" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="featured-info">
-          <div>
-            <h3>Orbit Supply — Storefront + Order Automation</h3>
-            <p>Next.js storefront, Stripe checkout, and an n8n pipeline that routes orders, updates inventory, and
-              messages customers on Telegram — zero manual touch.</p>
-          </div>
-          <div class="featured-tags">
-            <span class="tag">Next.js</span>
-            <span class="tag">Stripe</span>
-            <span class="tag">n8n</span>
-            <span class="tag">Telegram API</span>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- LIGHTBOX -->
@@ -2266,14 +2193,13 @@
             <h5>Site</h5>
             <a href="#services">Services</a>
             <a href="#websites">Portfolio</a>
-            <a href="#featured">About</a>
+            <a href="#faq">About</a>
             <a href="#contact">Contact</a>
           </div>
           <div class="footer-col">
             <h5>Work</h5>
             <a href="#websites">Websites</a>
             <a href="#automations">Automations</a>
-            <a href="#featured">Featured Build</a>
           </div>
         </div>
       </div>
@@ -2341,55 +2267,6 @@
         solution: 'Built a single-page portfolio with project sections, service cards, and direct contact CTA.',
         result: 'The portfolio now acts as the main credibility hub for client conversations.',
         link: 'https://jeevan-601.github.io/portfoliowebsite/'
-      },
-      {
-        title: 'Studio Landing Page Revamp', cat: 'Agency', stack: ['HTML', 'CSS'],
-        summary: 'A visual refresh for a small creative studio homepage.',
-        problem: 'The previous page looked outdated and did not reflect service quality.',
-        solution: 'Reworked layout, typography, and CTA structure for better clarity and trust.',
-        result: 'The studio now presents a sharper first impression for new leads.'
-      },
-      {
-        title: 'Fitness Coach Micro Site', cat: 'Coaching', stack: ['HTML', 'CSS', 'JavaScript'],
-        summary: 'A focused one-page site for a fitness coach offer funnel.',
-        problem: 'Potential clients were dropping off from social links with no clear conversion page.',
-        solution: 'Created a mobile-first page with offer blocks, testimonials, and CTA flow.',
-        result: 'The coach now has a dedicated page that captures more direct inquiries.'
-      },
-      {
-        title: 'Freelancer Service Page', cat: 'Personal Brand', stack: ['HTML', 'CSS'],
-        summary: 'A clear service website for a solo freelancer profile.',
-        problem: 'Service details were scattered across different social platforms.',
-        solution: 'Consolidated services, proof, and contact into one structured website.',
-        result: 'Clients now understand scope faster before starting conversations.'
-      },
-      {
-        title: 'Local Business Info Site', cat: 'Small Business', stack: ['HTML', 'Bootstrap'],
-        summary: 'An informational website for a local business team.',
-        problem: 'Customers had no reliable online source for business details.',
-        solution: 'Built a simple and fast site with location, services, and inquiry sections.',
-        result: 'The business now receives inquiries with better context from visitors.'
-      },
-      {
-        title: 'Event Promo Landing', cat: 'Events', stack: ['HTML', 'CSS', 'JavaScript'],
-        summary: 'A short campaign page for an event registration push.',
-        problem: 'The campaign lacked a dedicated destination for paid and social traffic.',
-        solution: 'Created a conversion-oriented landing page with agenda and registration CTA.',
-        result: 'Event communication became clearer and easier to share.'
-      },
-      {
-        title: 'Product Showcase Page', cat: 'Product', stack: ['HTML', 'CSS'],
-        summary: 'A website section to present product highlights and use cases.',
-        problem: 'The product value was unclear in existing communication materials.',
-        solution: 'Built feature-focused sections with benefit-led copy and structured visuals.',
-        result: 'Visitors now get a clearer understanding of the product quickly.'
-      },
-      {
-        title: 'Consultant Lead Page', cat: 'Consulting', stack: ['HTML', 'CSS', 'JavaScript'],
-        summary: 'A lead-generation page for a consultant service offer.',
-        problem: 'Referrals had no tailored page to review services before contact.',
-        solution: 'Created a compact lead page with services, outcomes, and direct CTA.',
-        result: 'Consultation discussions now start with better-qualified leads.'
       },
     ];
 
@@ -2599,24 +2476,6 @@
       });
     });
     function closeLightboxNow() { setTimeout(closeLightbox, 50); }
-
-    document.getElementById('featuredPanel').addEventListener('click', () => {
-      openLightbox(`
-    <div class="lb-eyebrow">case study — featured build</div>
-    <h3>Orbit Supply — Storefront + Order Automation</h3>
-    <div class="lb-block"><h4>The Problem</h4><p>Orbit Supply was running a Shopify-adjacent storefront with a fulfillment process stitched together from spreadsheets and manual Telegram messages to their warehouse team — every order meant someone copying data by hand.</p></div>
-    <div class="lb-block"><h4>The Solution</h4><p>I rebuilt the storefront in Next.js with Stripe checkout, then connected it to an n8n pipeline that automatically updates inventory, notifies the warehouse on Telegram, and emails the customer at every stage.</p></div>
-    <div class="lb-block"><h4>The Result</h4><p>Order-to-fulfillment time dropped from an average of 6 hours to under 12 minutes, with zero manual data entry.</p></div>
-    <div class="lb-metrics">
-      <div><div class="lb-metric-num">96%</div><div class="lb-metric-label">Faster fulfillment</div></div>
-      <div><div class="lb-metric-num">0</div><div class="lb-metric-label">Manual order entries</div></div>
-      <div><div class="lb-metric-num">1.1s</div><div class="lb-metric-label">Avg. page load</div></div>
-    </div>
-    <div class="lb-tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">n8n</span><span class="tag">Telegram API</span></div>
-    <a href="#contact" class="btn btn-primary" style="margin-top:8px;" onclick="closeLightboxNow()">Start a project like this</a>
-  `);
-    });
-
 
     const terminalLines = [
       { prefix: '$', text: 'deploying workflow <span class="path">order-pipeline.json</span>' },
